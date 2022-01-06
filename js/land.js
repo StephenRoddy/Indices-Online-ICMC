@@ -6,10 +6,10 @@ function setup() {
     // initialize sentiment analysis
     //set up button and listeners
     mobile = createButton("Mobile");
-    mobile.addClass("toggle-btn");
+    mobile.addClass("mobile-btn");
 
     desktop = createButton("Desktop\Laptop");
-    desktop.addClass("toggle-btn");
+    desktop.addClass("desktop-btn");
 
 
     mobile.mousePressed(go_mobile);
