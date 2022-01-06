@@ -5,6 +5,7 @@ let highMidMap_Blue =0;
 
 let sph_rad;
 let x,y;
+let push_count =0;
 
 let t = 10; //drunk walk parameters
 let T = 10000;
@@ -50,14 +51,30 @@ function setup() {
     toggleBtn.mousePressed(toggleAudio);
     toggleBtn.mousePressed(textHandler);
     toggleBtn.mousePressed(getSentiment);
-
-    c = color(0,0,0); // black out the sphere initially.
-    fill(c);
-
-
 }
 
 function draw() {
+  if (toggleBtn.mousePressed()){
+    push_count++;
+  }
+  if (push_count>0){
+    sphere_map();
+  }
+
+//Drunk walk Generator to control light directionality
+    x = noise(t);
+    x = map(x,0,1,0,width);
+    y = noise(T);
+    y = map(y,0,1,0,height);
+    t =t+0.01;
+    T =T+0.01;
+//Sphere
+  sph_rad = width*.2;
+  pointLight(bassMap_Red,midMap_Green, highMidMap_Blue, x, y, (sph_rad*-1)-10);
+  sphere(sph_rad);
+}
+
+function sphere_map() {
   fft.setInput(audio);
   let waveform = fft.waveform(); // amplitudes along time domain
   let spectrum = fft.analyze();
