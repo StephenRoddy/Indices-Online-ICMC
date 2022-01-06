@@ -99,9 +99,7 @@ canvas {
 }
 
 
-/* XXX:  */
-/* Buton was 2vmax from bottom and no left position was given*/
-.dekstop-btn {
+.desktop-btn {
 	padding: 10px;
 	text-align: center;
 	text-transform: uppercase;
@@ -112,8 +110,7 @@ canvas {
 	width: 10vmax;
 }
 
-/*removed right: 40vmax; */
-.dekstop-btn {
+.desktop-btn {
 	background: transparent;
 	color: currentColor;
 	top: 20vh;
@@ -128,7 +125,6 @@ canvas {
 .dekstop-btn:hover {
 	color: #fff;
 }
-
 
 
 .choice_text {
@@ -150,16 +146,14 @@ canvas {
 	margin-left: 12.5vmax;
 	margin-bottom: 5.5vmax;
 	clear: both;
-
-
 }
 
 .choice_text {
 	outline: none;
 }
 
-.choice_text
-{	color: #fff;
+.choice_text{
+	color: #fff;
 }
 
 .att {

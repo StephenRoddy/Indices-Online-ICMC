@@ -25,11 +25,11 @@ function draw() {
 }
 
 function go_mobile() {
-    window.open("/mobile.html","_self")
+    window.open("./mobile.html","_self")
 }
 
 function go_dekstop() {
-  window.open("/desktop.html","_self")
+  window.open("./desktop.html","_self")
 
 
 }
