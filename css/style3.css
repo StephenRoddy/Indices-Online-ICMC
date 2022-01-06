@@ -68,8 +68,6 @@ canvas {
 }
 
 
-
-
 /* Buton was 2vmax from bottom and no left position was given*/
 .toggle-btn {
 	padding: 10px;
@@ -147,6 +145,12 @@ I've also added a clear: both. Also removed a positioning variabel left: 2.5vmax
 		width: calc(100% - 20px);
 	}
 
+	.lds-hourglass {
+			width: 15vmax;
+		  height: 15vmax;
+			left: 50vw - 15vmax;
+			top: 50vh - 15vmax;
+		}
 
 	.txt-note {
 		 visibility: visible;
