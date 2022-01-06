@@ -174,7 +174,7 @@ canvas {
 		bottom: 20vh;
 		width: calc(100% - 20px);
 		margin: auto;
-
+		overflow: hidden;
 	}
 
 	.desktop-btn {
@@ -182,19 +182,19 @@ canvas {
 		top: 20vh;
 		width: 100%;
 		margin: auto;
+		overflow: hidden;
 	}
 
 	.choice_text {
 		 visibility: visible;
 		 position: absolute;
+		 overflow: hidden;
 		 height: 10vh;
-		 overflow: scroll;
  		 top: 40vh;
 		 right: 10px;
 		 letter-spacing: 0.05em;
 		 text-align:center;
 		 margin: auto;
-
 		 clear: both;
 	 }
 
