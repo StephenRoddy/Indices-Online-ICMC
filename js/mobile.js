@@ -33,10 +33,14 @@ function preload() {
 
 function setup() {
 
-    createCanvas(windowWidth*.5, windowHeight*.5, WEBGL);
+    createCanvas(windowWidth*.25, windowHeight*.25, WEBGL);
 
     fft = new p5.FFT();
     fft.setInput(audio);
+
+
+    txtNotes = createDiv('<p>The Body in the Machine: A retranslation of soundworks for 58+1/63 Indices On The Body w/AMAE/DePinto, Jean-Luc Nancy & composition by Stephen Roddy, mediated via Web & AI/ML technologies. </p>');
+    txtNotes.addClass("txt-note");
 
     // initialize sentiment analysis
     sentiment = ml5.sentiment('movieReviews', modelReady);
@@ -48,8 +52,6 @@ function setup() {
     toggleBtn.mousePressed(textHandler);
     toggleBtn.mousePressed(getSentiment);
 
-    txtNotes = createDiv('<p>The Body in the Machine: A retranslation of soundworks for 58+1/63 Indices On The Body w/AMAE/DePinto, Jean-Luc Nancy & composition by Stephen Roddy, mediated via Web & AI/ML technologies. </p>');
-    txtNotes.addClass("txt-note");
 
 }
 
