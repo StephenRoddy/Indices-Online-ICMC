@@ -172,7 +172,7 @@ canvas {
 	.desktop-btn {
 		right: 10px;
 		top: 20vh;
-		width: calc(100% - 20px);
+		width: 100%;
 	}
 
 	.choice_text {
