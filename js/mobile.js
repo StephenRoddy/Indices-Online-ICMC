@@ -95,7 +95,7 @@ function sphere_map() {
     t =t+0.01;
     T =T+0.01;
 //Sphere
-  sph_rad = width*.5;
+  sph_rad = width*.45;
   pointLight(bassMap_Red,midMap_Green, highMidMap_Blue, x, y, (sph_rad*-1)-10);
   sphere(sph_rad);
 }
