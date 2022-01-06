@@ -15,12 +15,12 @@ function setup() {
 
 
     mobile.mousePressed(go_mobile);
-    desktop.mousePressed(go_dekstop);
+    desktop.mousePressed(go_desktop);
 
 
 }
 
-function go_dekstop() {
+function go_desktop() {
   window.open("./desktop.html","_self")
 }
 
