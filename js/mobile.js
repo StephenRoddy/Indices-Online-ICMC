@@ -1,4 +1,4 @@
-let sentiment,prediction,saScore,sntMnt, indNum, cover,audio,corpus,comp1,comp2,index9,index15,index18,index21,index22,index24,index27,index32,index45,index46,index47,index51,toggleBtn,txtNotes;
+let sentiment,prediction,saScore,sntMnt, indNum, cover,audio,corpus,index9,index15,index18,index22,index24,index27,index32,index46,index47,index51,toggleBtn,txtNotes;
 let degs;
 let b_w = 75;
 let b_h = 75;
@@ -38,9 +38,6 @@ function setup() {
     fft = new p5.FFT();
     fft.setInput(audio);
 
-    txtNotes = createDiv('<p>The Body in the Machine: A retranslation of soundworks for 58+1/63 Indices On The Body w/AMAE/DePinto, Jean-Luc Nancy & composition by Stephen Roddy, mediated via Web & AI/ML technologies. </p>');
-    txtNotes.addClass("txt-note");
-
     // initialize sentiment analysis
     sentiment = ml5.sentiment('movieReviews', modelReady);
     //set up button and listeners
@@ -51,6 +48,8 @@ function setup() {
     toggleBtn.mousePressed(textHandler);
     toggleBtn.mousePressed(getSentiment);
 
+    txtNotes = createDiv('<p>The Body in the Machine: A retranslation of soundworks for 58+1/63 Indices On The Body w/AMAE/DePinto, Jean-Luc Nancy & composition by Stephen Roddy, mediated via Web & AI/ML technologies. </p>');
+    txtNotes.addClass("txt-note");
 
 }
 
@@ -84,12 +83,12 @@ function draw() {
   }
 
 //Drunk walk Generator to control light directionality
-  x = noise(t);
-  x = map(x,0,1,0,width);
-  y = noise(T);
-  y = map(y,0,1,0,height);
-  t =t+0.01;
-  T =T+0.01;
+    x = noise(t);
+    x = map(x,0,1,0,width);
+    y = noise(T);
+    y = map(y,0,1,0,height);
+    t =t+0.01;
+    T =T+0.01;
 
 
 /*
