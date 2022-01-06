@@ -186,16 +186,16 @@ canvas {
 	}
 
 	.choice_text {
-		 visibility: visible;
-		 position: absolute;
-		 overflow: hidden;
-		 height: 10vh;
- 		 top: 40vh;
-		 right: 10px;
-		 letter-spacing: 0.05em;
-		 text-align:center;
-		 margin: auto;
-		 clear: both;
+		right: 10px;
+		top: 40vh;
+		width: calc(100% - 200px);
+		margin: auto;
+		overflow: hidden;
+		height: 10vh;
+		right: 10px;
+		letter-spacing: 0.05em;
+		text-align:center;
+		clear: both;
 	 }
 
 }
