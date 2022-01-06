@@ -10,7 +10,7 @@ function setup() {
     mobile = createButton("Mobile");
     mobile.addClass("mobile-btn");
 
-    desktop = createButton("Desktop\Laptop");
+    desktop = createButton("Desktop" + " \\ " + "Laptop");
     desktop.addClass("desktop-btn");
 
 
