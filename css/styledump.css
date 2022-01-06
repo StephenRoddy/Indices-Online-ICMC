@@ -213,11 +213,15 @@ I've also added a clear: both. Also removed a positioning variabel left: 2.5vmax
 		 overflow: scroll;
 		 width:  calc(100% - 20px);
 		 right: 10px;
- 		 top: 10px;
+ 		 bottom: 10px;
 		 pointer-events: none;
-		 letter-spacing: 0.05em;
+		 padding: 3px;
+		 letter-spacing: 0.1em;
+		 color: currentColor;
 		 text-align:left;
-
+		 top: 2%;
+		 margin-left: 1.5vmax;
+		 margin-bottom: 5.5vmax;
 		 clear: both;
 
 }
