@@ -20,9 +20,6 @@ function setup() {
 
 }
 
-function draw() {
-
-}
 
 function go_mobile() {
   window.open("./mobile.html","_self")
