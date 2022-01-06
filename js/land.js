@@ -15,7 +15,7 @@ function setup() {
 
 
     mobile.mousePressed(go_mobile);
-    dekstop.mousePressed(go_dekstop);
+    desktop.mousePressed(go_dekstop);
 
 
 }
