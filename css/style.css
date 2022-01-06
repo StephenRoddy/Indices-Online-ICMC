@@ -142,9 +142,6 @@ canvas {
 	width: 75vmax;
 }
 
-/* I've changed the css to create a margin from the top and from the bottom around the text.
-I've also added a clear: both. Also removed a positioning variabel left: 2.5vmax;
- and too out floar:right too */
 
 .txt-note {
 	background: transparent;
@@ -179,13 +176,6 @@ I've also added a clear: both. Also removed a positioning variabel left: 2.5vmax
 		width: calc(100% - 20px);
 	}
 
-	.lds-hourglass {
-			width: 15vmax;
-		  height: 15vmax;
-			left: 50vw - 15vmax;
-			top: 50vh - 15vmax;
-		}
-
 	.txt-note {
 		 visibility: visible;
 		 position: absolute;
@@ -196,9 +186,14 @@ I've also added a clear: both. Also removed a positioning variabel left: 2.5vmax
  		 top: 10px;
 		 letter-spacing: 0.05em;
 		 text-align:left;
-
 		 clear: both;
-
 	 }
+
+	 .lds-hourglass {
+ 			width: 15vmax;
+ 		  height: 15vmax;
+ 			left: 50vw - 15vmax;
+ 			top: 50vh - 15vmax;
+ 		}
 
 }
