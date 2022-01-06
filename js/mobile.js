@@ -49,7 +49,8 @@ function setup() {
     toggleBtn.mousePressed(textHandler);
     toggleBtn.mousePressed(getSentiment);
 
-    color(0,0,0); // black out the sphere initially.
+    c = color(0,0,0); // black out the sphere initially.
+    fill(c);
 
 
 }
