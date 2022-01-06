@@ -131,7 +131,7 @@ canvas {
 	padding: 10px;
 	text-align: center;
 	letter-spacing: 0.1em;
-	color: currentColor;
+	color: #fff;
 	position: fixed;
 	text-align:left;
 	border: 1px solid;
@@ -169,7 +169,7 @@ canvas {
 		bottom: 10px;
 		width: calc(100% - 20px);
 	}
-	
+
 
 	.choice_text {
 		 visibility: visible;
