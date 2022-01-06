@@ -31,6 +31,8 @@ function setup() {
 
     createCanvas(windowWidth*.65, windowHeight*.65, WEBGL);
 
+    noStroke();
+    background(0);
 
     fft = new p5.FFT();
     fft.setInput(audio);
