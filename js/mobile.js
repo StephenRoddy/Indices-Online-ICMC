@@ -5,7 +5,10 @@ let b_h = 75;
 let b_d = 75;
 let cnv_w = 500;
 let cnv_h = 500;
-let highMidMap, bassMap, midMAp;
+let highMidMap = 0;
+let bassMap = 0;
+let midMAp = 0;;
+
 let x,y;
 let t = 10; //drunk walk parameters
 let T = 10000;
@@ -56,13 +59,6 @@ function setup() {
 
     console.log(plyArr.length);
     console.log(txtArr.length);
-
-/*
-    //Brownian Motion Parameters
-    x_b = random(600);
-    y_b = random(200);
-
-*/
 
 }
 
