@@ -180,10 +180,10 @@ canvas {
 		 visibility: visible;
 		 position: absolute;
 		 width:  calc(100% - 20px);
-		 max-height: 27vmax;
+		 height: 10vh;
 		 overflow: scroll;
 		 right: 10px;
- 		 top: 50vh;
+ 		 top: 40vh;
 		 letter-spacing: 0.05em;
 		 text-align:left;
 		 clear: both;
