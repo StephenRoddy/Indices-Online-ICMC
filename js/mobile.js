@@ -55,11 +55,12 @@ function setup() {
 
 function draw() {
   if (toggleBtn.mousePressed()){
-    push_count++;
+    push_count = push_count+1;
   }
   if (push_count > 0){
     sphere_map();
   }
+
   console.log(push_count);
 
 //Drunk walk Generator to control light directionality
