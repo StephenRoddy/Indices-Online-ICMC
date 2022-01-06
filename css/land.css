@@ -188,7 +188,7 @@ canvas {
 	.choice_text {
 		right: 10px;
 		top: 40vh;
-		width: calc(100% - 200px);
+		width: calc(100% - 20px);
 		margin: auto;
 		overflow: hidden;
 		height: 10vh;
