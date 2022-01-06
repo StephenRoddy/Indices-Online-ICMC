@@ -183,7 +183,7 @@ canvas {
 		 max-height: 27vmax;
 		 overflow: scroll;
 		 right: 10px;
- 		 top: 10px;
+ 		 top: 50vh;
 		 letter-spacing: 0.05em;
 		 text-align:left;
 		 clear: both;
