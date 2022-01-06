@@ -57,6 +57,18 @@ a:focus {
 	overflow: hidden;
 }
 
+
+
+canvas {
+	position: absolute;
+	left: 50%;
+	top: 60%;
+	-webkit-transform: translate(0%, 0%);
+	transform: translate(-50%, -50%);
+	width: 100%;
+	height: 100%;
+}
+
 .lds-hourglass {
   display: inline-block;
   width: 64px;
@@ -90,18 +102,6 @@ a:focus {
     transform: rotate(1800deg);
   }
 }
-
-canvas {
-	position: absolute;
-	left: 50%;
-	top: 60%;
-	-webkit-transform: translate(0%, 0%);
-	transform: translate(-50%, -50%);
-	width: 100%;
-	height: 100%;
-}
-
-
 /* Buton was 2vmax from bottom and no left position was given*/
 .toggle-btn {
 	padding: 10px;
