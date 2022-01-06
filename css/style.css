@@ -137,35 +137,6 @@ I've also added a clear: both. Also removed a positioning variabel left: 2.5vmax
 	text-align: right;
 }
 
-.lds-hourglass {
-  display: inline-block;
-  width: 64px;
-  height: 64px;
-  position: absolute;
-	left: 50% - 64px;
-	top: 50% - 64px;
-}
-.lds-hourglass:after {
-  content: " ";
-  display: block;
-  border-radius: 0%;
-  width: 0;
-  height: 0;
-	visibility: hidden;
-}
-@keyframes lds-hourglass {
-  0% {
-    transform: rotate(0);
-    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
-  }
-  50% {
-    transform: rotate(900deg);
-    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-  }
-  100% {
-    transform: rotate(1800deg);
-  }
-}
 
 @media screen and (max-width: 55em) {
 
@@ -174,13 +145,6 @@ I've also added a clear: both. Also removed a positioning variabel left: 2.5vmax
 		right: 10px;
 		bottom: 10px;
 		width: calc(100% - 20px);
-	}
-
-	.lds-hourglass {
-		width: 15vmax;
-	  height: 15vmax;
-		left: 50vw - 15vmax;
-		top: 50vh - 15vmax;
 	}
 
 
