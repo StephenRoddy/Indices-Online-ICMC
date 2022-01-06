@@ -5,7 +5,7 @@ function setup() {
 
 
     choice_text = createDiv("<p>Please choose your platform.</p>");
-    choice_text.addClass("txt-note");
+    choice_text.addClass("choice_text");
 
     mobile = createButton("Mobile");
     mobile.addClass("mobile-btn");
