@@ -192,20 +192,12 @@ I've also added a clear: both. Also removed a positioning variabel left: 2.5vmax
 		width: calc(100% - 20px);
 	}
 
-	.lds-ripple {
-		width: 15vmax;
-	  height: 15vmax;
-		left: 45vw;
-		top: 45vh;
-	}
-
-
-	.hc-img {
-		left: 10px;
-		top: 10px;
-		width: 300px;
-		height: 300px;
-
+	.lds-hourglass {
+			width: 15vmax;
+		  height: 15vmax;
+			left: 45vw;
+			top: 45vh;
+		}
 
 }
 
