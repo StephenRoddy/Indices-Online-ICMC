@@ -2,9 +2,7 @@ let mobile, desktop;
 
 function setup() {
 
-    //toggleBtn.mousePressed(toggleBtn);
-    // initialize sentiment analysis
-    //set up button and listeners
+  
     mobile = createButton("Mobile");
     mobile.addClass("mobile-btn");
 
