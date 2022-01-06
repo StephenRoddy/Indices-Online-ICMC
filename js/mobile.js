@@ -5,9 +5,9 @@ let b_h = 75;
 let b_d = 75;
 let cnv_w = 500;
 let cnv_h = 500;
-let highMidMap = 0;
-let bassMap = 0;
-let midMAp = 0;;
+let bassMap_Red =0;
+let midMap_Green =0;
+let highMidMap_Blue =0;
 
 let x,y;
 let t = 10; //drunk walk parameters
@@ -33,7 +33,7 @@ function preload() {
 
 function setup() {
 
-    createCanvas(windowWidth*.25, windowHeight*.25, WEBGL);
+    createCanvas(windowWidth*.5, windowHeight*.5, WEBGL);
 
     fft = new p5.FFT();
     fft.setInput(audio);
