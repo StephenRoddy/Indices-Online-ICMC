@@ -54,22 +54,12 @@ function setup() {
 }
 
 function draw() {
+  if (toggleBtn.mousePressed()){
+    push_count = push_count++;
+  }
+  if (push_count > 0){
     sphere_map();
-}
-
-  console.log(push_count);
-
-//Drunk walk Generator to control light directionality
-    x = noise(t);
-    x = map(x,0,1,0,width);
-    y = noise(T);
-    y = map(y,0,1,0,height);
-    t =t+0.01;
-    T =T+0.01;
-//Sphere
-  sph_rad = width*.2;
-  pointLight(bassMap_Red,midMap_Green, highMidMap_Blue, x, y, (sph_rad*-1)-10);
-  sphere(sph_rad);
+  }
 }
 
 function sphere_map() {
