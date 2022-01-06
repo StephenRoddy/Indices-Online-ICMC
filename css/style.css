@@ -67,15 +67,14 @@ canvas {
 	height: 100%;
 }
 
-.lds-hourglass,
-.lds-hourglass:after {
-  box-sizing: border-box;
-}
+
 .lds-hourglass {
   display: inline-block;
-  position: relative;
-  width: 80px;
-  height: 80px;
+  width: 64px;
+  height: 64px;
+  position: absolute;
+	left: 50%;
+	top: 50%;
 }
 .lds-hourglass:after {
   content: " ";
@@ -83,10 +82,10 @@ canvas {
   border-radius: 50%;
   width: 0;
   height: 0;
-  margin: 8px;
+  margin: 6px;
   box-sizing: border-box;
-  border: 32px solid currentColor;
-  border-color: currentColor transparent currentColor transparent;
+  border: 26px solid #fff;
+  border-color: #fff transparent #fff transparent;
   animation: lds-hourglass 1.2s infinite;
 }
 @keyframes lds-hourglass {
@@ -100,6 +99,7 @@ canvas {
   }
   100% {
     transform: rotate(1800deg);
+		opacity: 0;
   }
 }
 
