@@ -182,10 +182,9 @@ canvas {
 		 width:  calc(100% - 20px);
 		 height: 10vh;
 		 overflow: scroll;
-		 right: 10px;
  		 top: 40vh;
 		 letter-spacing: 0.05em;
-		 text-align:left;
+		 text-align:center;
 		 clear: both;
 	 }
 
