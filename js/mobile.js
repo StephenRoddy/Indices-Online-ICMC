@@ -35,6 +35,12 @@ function setup() {
 
     createCanvas(windowWidth*.5, windowHeight*.5, WEBGL);
 
+    bassMap_Red =0;
+    midMap_Green =0;
+    highMidMap_Blue =0;
+    
+    pointLight(bassMap_Red,midMap_Green, highMidMap_Blue, 0, 0, (0);
+
     fft = new p5.FFT();
     fft.setInput(audio);
 
