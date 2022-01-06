@@ -180,7 +180,7 @@ canvas {
 	.desktop-btn {
 		right: 10px;
 		top: 20vh;
-		width: 100%;
+		width: calc(100% - 20px);
 		margin: auto;
 		overflow: hidden;
 	}
