@@ -139,8 +139,9 @@ canvas {
 	position: fixed;
 	border: 1px solid;
 	top: 50vh;
-	width: 15vmax;
-	margin: auto;
+	width: 20vmax;
+	right: 50vw;
+	text-align:center;
 
 }
 
@@ -148,8 +149,7 @@ canvas {
 .choice_text {
 	background: transparent;
 	color: currentColor;
-	margin-left: 12.5vmax;
-	margin-bottom: 5.5vmax;
+	margin: auto;
 	clear: both;
 }
 
