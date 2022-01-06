@@ -33,7 +33,7 @@ function preload() {
 
 function setup() {
 
-    createCanvas(windowWidth*.5, windowHeight*.5, WEBGL);
+    createCanvas(windowWidth*.65, windowHeight*.65, WEBGL);
 
     bassMap_Red =0;
     midMap_Green =0;
