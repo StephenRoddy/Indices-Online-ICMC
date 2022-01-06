@@ -211,7 +211,7 @@ I've also added a clear: both. Also removed a positioning variabel left: 2.5vmax
 		 visibility: visible;
 		 position: absolute;
 		 overflow: scroll;
-		 width: 0;
-		 height: 0;
+		 width: 90%;
+		 height: 25%;
 		 pointer-events: none;
 }

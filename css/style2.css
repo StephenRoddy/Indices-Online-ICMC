@@ -201,7 +201,7 @@ canvas {
 		 visibility: hidden;
 		 position: absolute;
 		 overflow: hidden;
-		 width: 0;
-		 height: 0;
+		 width: 90%;
+		 height: 25%;
 		 pointer-events: none;
 }
