@@ -60,17 +60,47 @@ a:focus {
 canvas {
 	position: absolute;
 	left: 50%;
-	top: 60%;
+	top: 50%;
 	-webkit-transform: translate(0%, 0%);
 	transform: translate(-50%, -50%);
 	width: 100%;
 	height: 100%;
 }
 
+.lds-hourglass {
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  position: absolute;
+	left: 50%;
+	top: 50%;
+}
+.lds-hourglass:after {
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  margin: 6px;
+  box-sizing: border-box;
+  border: 26px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-hourglass 1.2s infinite;
+}
+@keyframes lds-hourglass {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    transform: rotate(1800deg);
+  }
+}
 
-
-
-/* Buton was 2vmax from bottom and no left position was given*/
 .toggle-btn {
 	padding: 10px;
 	text-align: center;
@@ -78,17 +108,16 @@ canvas {
 	letter-spacing: 0.1em;
 	color: currentColor;
 	position: absolute;
+	bottom: 2vmax;
 	border: 1px solid;
-	width: 10vmax;
+	width: 255px;
 }
 
-/*removed right: 40vmax; */
+
 .toggle-btn {
 	background: transparent;
 	color: currentColor;
-	bottom: 5%;
-	margin-left: 45vmax;
-
+	right: 40vmax;
 }
 
 .toggle-btn:focus {
@@ -104,24 +133,20 @@ canvas {
 	text-align: center;
 	letter-spacing: 0.1em;
 	color: currentColor;
-	position: fixed;
+	position: absolute;
 	text-align:left;
 	border: 1px solid;
 	width: 75vmax;
 }
 
-/* I've changed the css to create a margin from the top and from the bottom around the text.
-I've also added a clear: both. Also removed a positioning variabel left: 2.5vmax;
- and too out floar:right too */
 
 .txt-note {
 	background: transparent;
 	color: currentColor;
-	top: 10%;
-	margin-left: 12.5vmax;
-	margin-bottom: 5.5vmax;
-	clear: both;
-
+	float: right;
+	margin: 10vmax;
+  top: 2.5vmax;
+	left: 2.5vmax;
 
 }
 
@@ -133,8 +158,16 @@ I've also added a clear: both. Also removed a positioning variabel left: 2.5vmax
 	color: #fff;
 }
 
-.att {
-	text-align: right;
+.hc-img {
+	width: 35vmax;
+	height: 35vmax;
+	float:left;
+	position: absolute;
+	border: 1px solid;
+	left: 30vmax;
+  top: 50vmax;
+	bottom: 5vmax;
+
 }
 
 
@@ -147,20 +180,28 @@ I've also added a clear: both. Also removed a positioning variabel left: 2.5vmax
 		width: calc(100% - 20px);
 	}
 
+	.lds-hourglass {
+		width: 15vmax;
+	  height: 15vmax;
+		left: 45vw;
+		top: 45vh;
+	}
+
+
+	.hc-img {
+		left: 10px;
+		top: 10px;
+		width: 300px;
+		height: 300px;
+
+
+}
 
 	.txt-note {
-		 visibility: visible;
+		 visibility: hidden;
 		 position: absolute;
-		 width:  calc(100% - 20px);
-		 max-height: 27vmax;
-		 overflow: scroll;
-		 right: 10px;
- 		 top: 10px;
-		 letter-spacing: 0.05em;
-		 text-align:left;
-
-		 clear: both;
-
-	 }
-
+		 overflow: hidden;
+		 width: 0;
+		 height: 0;
+		 pointer-events: none;
 }
