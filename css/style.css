@@ -215,7 +215,6 @@ I've also added a clear: both. Also removed a positioning variabel left: 2.5vmax
 		 height: 27vmax;
 		 right: 10px;
  		 top: 10px;
-		 pointer-events: none;
 		 letter-spacing: 0.05em;
 		 text-align:left;
 
