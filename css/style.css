@@ -210,9 +210,9 @@ I've also added a clear: both. Also removed a positioning variabel left: 2.5vmax
 	.txt-note {
 		 visibility: visible;
 		 position: absolute;
-		 overflow: scroll;
 		 width:  calc(100% - 20px);
-		 height: 27vmax;
+		 max-height: 27vmax;
+		 overflow: scroll;
 		 right: 10px;
  		 top: 10px;
 		 letter-spacing: 0.05em;
