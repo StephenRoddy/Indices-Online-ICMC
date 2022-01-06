@@ -131,7 +131,7 @@ canvas {
 
 
 
-.txt-note {
+.choice_text {
 	padding: 10px;
 	text-align: center;
 	letter-spacing: 0.1em;
@@ -139,14 +139,14 @@ canvas {
 	position: fixed;
 	text-align:left;
 	border: 1px solid;
+	top: 50vh;
 	width: 75vmax;
 }
 
 
-.txt-note {
+.choice_text {
 	background: transparent;
 	color: currentColor;
-	top: 10%;
 	margin-left: 12.5vmax;
 	margin-bottom: 5.5vmax;
 	clear: both;
@@ -154,12 +154,12 @@ canvas {
 
 }
 
-.txt-note:focus {
+.choice_text {
 	outline: none;
 }
 
-.txt-note:hover {
-	color: #fff;
+.choice_text
+{	color: #fff;
 }
 
 .att {
