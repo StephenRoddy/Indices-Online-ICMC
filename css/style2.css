@@ -60,48 +60,47 @@ a:focus {
 canvas {
 	position: absolute;
 	left: 50%;
-	top: 60%;
+	top: 50%;
 	-webkit-transform: translate(0%, 0%);
 	transform: translate(-50%, -50%);
 	width: 100%;
 	height: 100%;
 }
 
-.lds-ripple {
+.lds-hourglass {
   display: inline-block;
-  position: relative;
   width: 64px;
   height: 64px;
-}
-.lds-ripple div {
   position: absolute;
-  border: 4px solid #fff;
-  opacity: 1;
+	left: 50%;
+	top: 50%;
+}
+.lds-hourglass:after {
+  content: " ";
+  display: block;
   border-radius: 50%;
-  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+  width: 0;
+  height: 0;
+  margin: 6px;
+  box-sizing: border-box;
+  border: 26px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-hourglass 1.2s infinite;
 }
-.lds-ripple div:nth-child(2) {
-  animation-delay: -0.5s;
-}
-@keyframes lds-ripple {
+@keyframes lds-hourglass {
   0% {
-    top: 28px;
-    left: 28px;
-    width: 0;
-    height: 0;
-    opacity: 1;
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
   }
   100% {
-    top: -1px;
-    left: -1px;
-    width: 58px;
-    height: 58px;
-    opacity: 0;
+    transform: rotate(1800deg);
   }
 }
 
-
-/* Buton was 2vmax from bottom and no left position was given*/
 .toggle-btn {
 	padding: 10px;
 	text-align: center;
@@ -109,17 +108,16 @@ canvas {
 	letter-spacing: 0.1em;
 	color: currentColor;
 	position: absolute;
+	bottom: 2vmax;
 	border: 1px solid;
-	width: 10vmax;
+	width: 255px;
 }
 
-/*removed right: 40vmax; */
+
 .toggle-btn {
 	background: transparent;
 	color: currentColor;
-	bottom: 5%;
-	margin-left: 45vmax;
-
+	right: 40vmax;
 }
 
 .toggle-btn:focus {
@@ -135,24 +133,20 @@ canvas {
 	text-align: center;
 	letter-spacing: 0.1em;
 	color: currentColor;
-	position: fixed;
+	position: absolute;
 	text-align:left;
 	border: 1px solid;
 	width: 75vmax;
 }
 
-/* I've changed the css to create a margin from the top and from the bottom around the text.
-I've also added a clear: both. Also removed a positioning variabel left: 2.5vmax;
- and too out floar:right too */
 
 .txt-note {
 	background: transparent;
 	color: currentColor;
-	top: 10%;
-	margin-left: 12.5vmax;
-	margin-bottom: 5.5vmax;
-	clear: both;
-
+	float: right;
+	margin: 10vmax;
+  top: 2.5vmax;
+	left: 2.5vmax;
 
 }
 
@@ -168,16 +162,12 @@ I've also added a clear: both. Also removed a positioning variabel left: 2.5vmax
 	width: 35vmax;
 	height: 35vmax;
 	float:left;
-	position: fixed;
+	position: absolute;
 	border: 1px solid;
 	left: 30vmax;
   top: 50vmax;
 	bottom: 5vmax;
 
-}
-
-.att {
-	text-align: right;
 }
 
 
@@ -190,7 +180,7 @@ I've also added a clear: both. Also removed a positioning variabel left: 2.5vmax
 		width: calc(100% - 20px);
 	}
 
-	.lds-ripple {
+	.lds-hourglass {
 		width: 15vmax;
 	  height: 15vmax;
 		left: 45vw;
@@ -210,7 +200,7 @@ I've also added a clear: both. Also removed a positioning variabel left: 2.5vmax
 	.txt-note {
 		 visibility: hidden;
 		 position: absolute;
-		 overflow: scroll;
+		 overflow: hidden;
 		 width: 0;
 		 height: 0;
 		 pointer-events: none;
