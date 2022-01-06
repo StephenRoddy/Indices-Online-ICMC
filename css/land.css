@@ -136,7 +136,7 @@ canvas {
 	text-align:left;
 	border: 1px solid;
 	top: 50vh;
-	width: 75vmax;
+	width: 15vmax;
 }
 
 
@@ -179,7 +179,7 @@ canvas {
 	.choice_text {
 		 visibility: visible;
 		 position: absolute;
-		 width:  calc(100% - 20px);
+		 width:  15vmax;
 		 height: 10vh;
 		 overflow: scroll;
  		 top: 40vh;
