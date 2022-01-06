@@ -51,13 +51,12 @@ function setup() {
     toggleBtn.mousePressed(toggleAudio);
     toggleBtn.mousePressed(textHandler);
     toggleBtn.mousePressed(getSentiment);
+    toggleBtn.mousePressed(push_inc);
+
 }
 
 function draw() {
-  if (toggleBtn.mousePressed()){
-    push_count = push_count+1;
-  }
-  if (push_count > 0){
+  if (push_count >= 1){
     sphere_map();
   }
 }
@@ -139,4 +138,8 @@ function getSentiment() {
 function modelReady() {
   // model is ready
   console.log("Model Loaded!");
+}
+
+function push_inc(){
+  push_count++;
 }
