@@ -30,7 +30,7 @@ function preload() {
 
 function setup() {
 
-    createCanvas(windowWidth*.65, windowHeight*.65, WEBGL);
+    createCanvas(windowWidth*.75, windowHeight*.75, WEBGL);
 
     noStroke();
     background(0);
@@ -95,7 +95,7 @@ function sphere_map() {
     t =t+0.01;
     T =T+0.01;
 //Sphere
-  sph_rad = width*.2;
+  sph_rad = width*.3;
   pointLight(bassMap_Red,midMap_Green, highMidMap_Blue, x, y, (sph_rad*-1)-10);
   sphere(sph_rad);
 }
