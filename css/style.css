@@ -195,8 +195,8 @@ I've also added a clear: both. Also removed a positioning variabel left: 2.5vmax
 	.lds-hourglass {
 			width: 15vmax;
 		  height: 15vmax;
-			left: 45vw;
-			top: 45vh;
+			left: 40vw;
+			top: 40vh;
 		}
 
 }
