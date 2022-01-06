@@ -139,8 +139,8 @@ canvas {
 	position: fixed;
 	border: 1px solid;
 	top: 50vh;
-	width: 20vmax;
-	right: 50vw;
+	width: 20vw;
+	right: 30vw;
 	text-align:center;
 
 }
