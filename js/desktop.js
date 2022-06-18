@@ -10,6 +10,7 @@ let x,y;
 let t = 10; //drunk walk parameters
 let T = 10000;
 
+
 function preload() {
     audio = loadSound("audio/Corpus.mp3");
     corpus = loadSound("audio/Corpus.mp3");
