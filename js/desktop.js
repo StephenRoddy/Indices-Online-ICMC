@@ -1,20 +1,15 @@
-let sentiment,prediction,saScore,sntMnt, indNum, cover,audio,corpus,comp1,comp2,index9,index15,index18,index21,index22,index24,index27,index32,index45,index46,index47,index51,toggleBtn,txtNotes;
-let degs;
+let x,y, highMidMap, bassMap, midMAp,sentiment,prediction,saScore,sntMnt, indNum, cover,audio,corpus,comp1,comp2,index9,index15,index18,index21,index22,index24,index27,index32,index45,index46,index47,index51,toggleBtn,txtNotesganVid, ganVid1,ganVid2,ganVid3,ganVid4,ganVid5,ganVid6,ganVid7,ganVid8, degs;
 let b_w = 75;
 let b_h = 75;
 let b_d = 75;
 let cnv_w = 500;
 let cnv_h = 500;
-let highMidMap, bassMap, midMAp;
-let x,y;
 let t = 10; //drunk walk parameters
 let T = 10000;
 let vidInd =0;
-let ganVid;
 
 
 function preload() {
-
 
     audio = loadSound("audio/Corpus.mp3");
     corpus = loadSound("audio/Corpus.mp3");
@@ -40,8 +35,7 @@ function preload() {
     ganVid5 = createVideo("video/SkyGan5.mp4");
     ganVid6 = createVideo("video/SeaGan1.mp4");
     ganVid7 = createVideo("video/SeaGan2.mp4");
-
-
+    ganVid8 = createVideo("video/SeaGan3.mp4");
 
     ganVid1.hide();
     ganVid2.hide();
@@ -50,10 +44,10 @@ function preload() {
     ganVid5.hide();
     ganVid6.hide();
     ganVid7.hide();
+    ganVid8.hide();
 
 
-
-     ganArr = [ganVid1,ganVid2,ganVid3,ganVid4,ganVid5,ganVid6,ganVid7];
+     ganArr = [ganVid1,ganVid2,ganVid3,ganVid4,ganVid5,ganVid6,ganVid7,ganVid8];
 
 
      plyArr = [corpus,index9,index15,index18,index21,index22,index24,index27,index32,index45,index46,index47,index51,comp1,comp2];
