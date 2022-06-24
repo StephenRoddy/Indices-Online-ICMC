@@ -7,6 +7,8 @@ let cnv_h = 500;
 let t = 10; //drunk walk parameters
 let T = 10000;
 let vidInd =0;
+let timCnt =0;
+
 
 
 function preload() {
@@ -57,7 +59,7 @@ function preload() {
 function setup() {
 
     ganVid = ganArr[6];
-    createCanvas(windowWidth*.5, windowHeight*.5, WEBGL);
+    createCanvas(windowWidth, windowHeight, WEBGL);
 
     noStroke();
     background(0);
@@ -82,10 +84,6 @@ function setup() {
     toggleBtn.mousePressed(fullscreen);
 
 
-    console.log(plyArr.length);
-    console.log(txtArr.length);
-
-
 }
 
 function draw() {
@@ -93,7 +91,7 @@ function draw() {
 
 push();
     texture(ganVid);
-    plane(windowWidth*.5, windowHeight*.5)
+    plane(windowWidth, windowHeight)
 pop();
 
 //  console.log.txtNotes(values);
@@ -145,14 +143,16 @@ pointLight(bassMap_Red,midMap_Green, highMidMap_Blue, x, y, 5);
 
 // pointLight(bassMap_Red,midMap_Green, highMidMap_Blue, x, y, (sph_rad*-1)-10);
 
-}
+resetCheck(); // Checks to see if the piece should be reset for the enxt person.
 
+}
 
 
 function toggleMedia() {
 
-    vidInd = int(Math.floor((Math.random() * ganArr.length)));
+    vidInd = Math.floor((Math.random() * ganArr.length));
     ganVid = ganArr[vidInd];
+    ganVid.size(1024,1024);
     ganVid.loop();
 
     if (audio.isPlaying()) {
@@ -162,10 +162,6 @@ function toggleMedia() {
       indNum = rndIndx;
       audio.play();
 
-
-      vidInd = Math.floor((Math.random() * ganArr.length));
-      ganVid = ganArr[vidInd];
-      ganVid.loop();
     } else {
       audio.stop();
       rndIndx = Math.floor((Math.random() * plyArr.length));
@@ -174,7 +170,6 @@ function toggleMedia() {
       audio.play();
 
     }
-
 
       return audio, indNum, vidInd;
 }
@@ -185,6 +180,19 @@ function textHandler() {
   txtNotes.addClass("txt-note");
 
   return txtArr
+}
+
+ //Check to see if the piece should be reset.
+function resetCheck(){
+if((timCnt % frameRate() * 5) === 0) {
+  if (audio.isPlaying()){
+
+  } else{
+    window.location.href = 'https://stephenroddy.github.io/Indices-Online-ICMC/desktop.html';
+    timCnt=0;
+    }
+  }
+timCnt++ //increament our timer for checking when to reset the piece
 }
 
 function getSentiment() {
