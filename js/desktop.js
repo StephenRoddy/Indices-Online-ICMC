@@ -8,7 +8,7 @@ let t = 10; //drunk walk parameters
 let T = 10000;
 let vidInd =0;
 let timCnt =0;
-
+let clickCheck = false;
 
 
 function preload() {
@@ -83,6 +83,8 @@ function setup() {
     toggleBtn.mousePressed(getSentiment);
     toggleBtn.mousePressed(fullscreen);
 
+    clickCheck = false; // checks if our toggle button was clicked interrupting the timer that restes the page after 5 seconds
+
 
 }
 
@@ -150,6 +152,7 @@ resetCheck(); // Checks to see if the piece should be reset for the enxt person.
 
 function toggleMedia() {
 
+    clickCheck++;
     vidInd = Math.floor((Math.random() * ganArr.length));
     ganVid = ganArr[vidInd];
     ganVid.size(1024,1024);
@@ -184,7 +187,7 @@ function textHandler() {
 
  //Check to see if the piece should be reset.
 function resetCheck(){
-if((timCnt % frameRate() * 5) === 0) {
+if((timCnt % frameRate() * 5) === 0 && clickCheck == true) {
   if (audio.isPlaying()){
 
   } else{
