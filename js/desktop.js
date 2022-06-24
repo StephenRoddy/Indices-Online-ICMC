@@ -83,7 +83,7 @@ function setup() {
     toggleBtn.mousePressed(getSentiment);
     toggleBtn.mousePressed(fullscreen);
 
-    clickCheck = false; // checks if our toggle button was clicked interrupting the timer that restes the page after 5 seconds
+    clickCheck = false; // update to false after page is set up to interrupt the  resetCheck method that resets the page. Prevents page from resetinng continually when idle on landing area.
 
 
 }
