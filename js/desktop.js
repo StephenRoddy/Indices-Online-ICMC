@@ -93,7 +93,7 @@ function draw() {
 
 push();
     texture(ganVid);
-    plane(windowWidth, windowHeight)
+    plane(windowWidth, windowHeight);
 pop();
 
 //  console.log.txtNotes(values);
