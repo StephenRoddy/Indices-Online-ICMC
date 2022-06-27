@@ -39,7 +39,7 @@ function setup() {
     fft.setInput(audio);
 
 
-    txtNotes = createDiv('<p>The Body in the Machine: A retranslation of soundworks for 58+1/63 Indices On The Body w/AMAE/DePinto, Jean-Luc Nancy & composition by Stephen Roddy, mediated via Web & AI/ML technologies. </p>');
+    txtNotes = createDiv('<p>The Body in the Machine: A web-based, AI/ML mediated journey through soundworks created for \'58+1/63 Indices On The Body\' w/AMAE/DePinto, Jean-Luc Nancy & music by Stephen Roddy.</p>');
     txtNotes.addClass("txt-note");
 
     // initialize sentiment analysis
