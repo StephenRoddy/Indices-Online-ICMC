@@ -4,7 +4,7 @@ let b_h = 75;
 let b_d = 75;
 let cnv_w = 500;
 let cnv_h = 500;
-let t = 10; //drunk walk parameters
+let t = 10;
 let T = 10000;
 let vidInd =0;
 let timCnt =0;
@@ -195,14 +195,7 @@ if((timCnt % frameRate() * 5) === 0 && clickCheck == true) {
     timCnt=0;
     }
   }
-  if (timCnt >= frameRate() * 6 ){
-    window.location.href = 'https://stephenroddy.github.io/Indices-Online-ICMC/desktop.html';
-    timCnt = 0;
-    }
-
 timCnt++ //increament our timer for checking when to reset the piece
-console.log(timCnt);
-
 }
 
 function getSentiment() {
@@ -211,6 +204,7 @@ function getSentiment() {
   const prediction = sentiment.predict(txtArr[indNum]);  // return the prediction
 
   saScore = prediction.score;
+  console.log(saScore);
   return saScore;
 }
 
