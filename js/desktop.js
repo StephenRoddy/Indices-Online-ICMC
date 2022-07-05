@@ -146,7 +146,7 @@ pointLight(bassMap_Red,midMap_Green, highMidMap_Blue, x, y, 5);
 // pointLight(bassMap_Red,midMap_Green, highMidMap_Blue, x, y, (sph_rad*-1)-10);
 
 resetCheck(); // Checks to see if the piece should be reset for the enxt person.
-
+console.log(clickCheck());
 }
 
 
