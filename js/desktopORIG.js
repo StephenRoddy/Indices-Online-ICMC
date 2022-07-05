@@ -4,7 +4,7 @@ let b_h = 75;
 let b_d = 75;
 let cnv_w = 500;
 let cnv_h = 500;
-let t = 10; //drunk walk parameters
+let t = 10;
 let T = 10000;
 let vidInd =0;
 let timCnt =0;
@@ -152,7 +152,7 @@ resetCheck(); // Checks to see if the piece should be reset for the enxt person.
 
 function toggleMedia() {
 
-    clickCheck = true;
+    clickCheck++;
     vidInd = Math.floor((Math.random() * ganArr.length));
     ganVid = ganArr[vidInd];
     ganVid.size(1024,1024);
