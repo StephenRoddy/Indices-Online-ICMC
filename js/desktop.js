@@ -152,7 +152,6 @@ resetCheck(); // Checks to see if the piece should be reset for the enxt person.
 
 function toggleMedia() {
 
-    clickCheck = true;
     vidInd = Math.floor((Math.random() * ganArr.length));
     ganVid = ganArr[vidInd];
     ganVid.size(1024,1024);
@@ -173,7 +172,7 @@ function toggleMedia() {
       audio.play();
 
     }
-
+      clickCheck = true;
       return audio, indNum, vidInd;
 }
 
