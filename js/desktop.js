@@ -195,11 +195,14 @@ if((timCnt % frameRate() * 5) === 0 && clickCheck == true) {
     timCnt=0;
     }
   }
+  if (timCnt >= frameRate() * 6 ){
+    window.location.href = 'https://stephenroddy.github.io/Indices-Online-ICMC/desktop.html';
+    timCnt = 0;
+    }
+
 timCnt++ //increament our timer for checking when to reset the piece
 console.log(timCnt);
-if (timCnt >= 8000){
-  timCnt = 0;
-}
+
 }
 
 function getSentiment() {
