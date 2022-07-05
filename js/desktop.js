@@ -197,6 +197,9 @@ if((timCnt % frameRate() * 5) === 0 && clickCheck == true) {
   }
 timCnt++ //increament our timer for checking when to reset the piece
 console.log(timCnt);
+if (timCnt >= 8000){
+  timCnt = 0;
+}
 }
 
 function getSentiment() {
