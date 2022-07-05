@@ -196,6 +196,7 @@ if((timCnt % frameRate() * 5) === 0 && clickCheck == true) {
     }
   }
 timCnt++ //increament our timer for checking when to reset the piece
+console.log(timCnt);
 }
 
 function getSentiment() {
@@ -204,7 +205,6 @@ function getSentiment() {
   const prediction = sentiment.predict(txtArr[indNum]);  // return the prediction
 
   saScore = prediction.score;
-  console.log(saScore);
   return saScore;
 }
 
