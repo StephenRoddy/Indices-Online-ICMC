@@ -69,7 +69,13 @@ function setup() {
     fft = new p5.FFT();
     fft.setInput(audio);
 
-    txtNotes = createDiv('<p>The Body in the Machine - Somewhere: A web-based, AI/ML mediated journey through soundworks created for \'58+1/63 Indices On The Body\' w/AMAE/DePinto, Jean-Luc Nancy & music by Stephen Roddy.</p>');
+    txtNotes = createDiv('<p>This piece is an online audiovisual installation that uses machine-learning techniques to reflect on the interplay of the artist and the artifact in the context of technologically mediated arts collaborations.</p>
+
+<p>This project involved the artistic collective AMAE, artist/curator Pier Giorgio De Pinto and philosopher Jean-Luc Nancy with Music and Code written by Dr. Stephen Roddy. It emerged from an earlier project entitled 58+1/63 Indices on the Body. Adopting Nancy’s view of the body as extended in the work of AMAE/DePinto and Roddy, the piece asks what happens to the body when we begin to rely heavily on translations across disembodied technologies to mediate both our communication and art-making. It reflects on how meaning mutates and transforms as the work is translated across various technologies and media.</p>
+
+<p>This work focuses on Nancy’s 58 indices on the body, written in 2006 by Jean-Luc Nancy and presented, alongside 4 additional new compositions, in the 2008 translation (by Richard A. Rand) of his 1992 book Corpus (Nancy 1992, Nancy 2008). Throughout this project, Nancy has produced 5 additional indices. As part of this project Jean Luc Nancy recorded himself reading his 58 indices on the body. 
+Each of the pieces presented here was assembled in a similar manner. Each respond to the English translations of the text, but they are guided by the ebb and flow of Nancy’s voice as he reads the pieces. The prosody in his voice, the vocal patterns of stress and release convey much new information and modulate the meanings of the words as they were written on the page.</p>
+');
     txtNotes.addClass("txt-note");
 
     // initialize sentiment analysis
@@ -178,7 +184,7 @@ function toggleMedia() {
 
 function textHandler() {
   txtNotes.remove();
-  txtNotes = createDiv('<p>'+txtArr[indNum]+'<div class = "att"></br>-Jean-Luc Nancy, <i>Corpus, 1992:(Trans. R.A. Rand)</i></div>'+'</p>');
+  txtNotes = createDiv('<p>'+txtArr[indNum]+'<div class = "att"></br>-Jean-Luc Nancy, <i>Corpus, 2008 edition:(Trans. R.A. Rand)</i></div>'+'</p>');
   txtNotes.addClass("txt-note");
 
   return txtArr
